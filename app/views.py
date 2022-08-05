@@ -6,6 +6,7 @@ from .models import Customer,Product,Cart,OrderPlaced
 #  return render(request, 'app/home.html')
 class Productview(View):
     def get(self,request):
+        print('madhu')
         topwears = Product.objects.filter(category='TW')
         bottomwears = Product.objects.filter(category='BW')
         mobiles = Product.objects.filter(category='M')
