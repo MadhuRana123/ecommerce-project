@@ -1,0 +1,9 @@
+
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Checkout canceled{% endblock title %}
+{% block main-content %}
+    <section>
+        <p>Forgot to add something to your cart? <a href="{% url 'home' %}">Try again</a></p>
+    </section>
+{% endblock main-content %}

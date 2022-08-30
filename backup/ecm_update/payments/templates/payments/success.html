@@ -1,0 +1,12 @@
+
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Thanks for your order!{% endblock title %}
+{% block main-content %}
+<section>
+    <p>
+        We appreciate you gave us a chance and made a purchase on our website.
+    </p>
+    <a href="{% url 'home' %}">Test again</a>
+</section>
+{% endblock main-content %}
